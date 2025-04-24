@@ -27,6 +27,9 @@ const jokes = [
 ];
 
 
+app.get('/', (req, res) => {
+  res.send("Welcome to joke center");
+});
 app.get('/api/jokes', (req, res) => {
   res.json(jokes);
 });
